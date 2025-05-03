@@ -1,0 +1,11 @@
+---
+- name: copy file
+  hosts: all
+  become: true
+
+
+  tasks:
+    - name: copy file
+      copy:
+        src: file2.txt
+        dest: /home/ubuntu/opt/myapt/file2.txt
